@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 </div>
             </form>
             <div>
-                <h3>Resultado</h3>
+                <h3>Resultado:</h3>
                 <div id="result"></div>
             </div>
         </div>
