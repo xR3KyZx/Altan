@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Cambio NIR Bait</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <style>
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="container" style="text-align: center;">
             <form method="get" id="myForm">
                 <div>
-                    <input type="text" name="value" id="textbox1" value="5500000000" placeholder="value">
+                    <input type="text" name="DN" id="textbox1" value="5500000000" placeholder="value">
                 </div>
                 <div>
                     <input type="text" name="nir" id="textbox2" value="123" placeholder="nir">
@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 </div>
             </form>
             <div>
-                <h3>The result:</h3>
+                <h3>Resultado</h3>
                 <div id="result"></div>
             </div>
         </div>
