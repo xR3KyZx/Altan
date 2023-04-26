@@ -1,0 +1,47 @@
+CREATE TABLE `CARGA` (
+  `idcarga` int(11) NOT NULL AUTO_INCREMENT,
+  `idusuario` int(11) DEFAULT NULL,
+  `usuario` varchar(45) DEFAULT NULL,
+  `dn` varchar(45) DEFAULT NULL,
+  `nir` varchar(45) DEFAULT NULL,
+  `f_ingreso` varchar(45) DEFAULT NULL,
+  `valor1` varchar(45) DEFAULT NULL,
+  `valor2` varchar(45) DEFAULT NULL,
+  `f_proceso` varchar(45) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idcarga`)
+) ENGINE=InnoDB AUTO_INCREMENT=8339 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+CREATE TABLE `CLAVE` (
+  `idclave` int(11) NOT NULL AUTO_INCREMENT,
+  `clave` varchar(2500) DEFAULT NULL,
+  PRIMARY KEY (`idclave`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+CREATE TABLE `GENERADOR` (
+  `idgenerador` int(11) NOT NULL AUTO_INCREMENT,
+  `valor1` varchar(255) DEFAULT NULL,
+  `valor2` varchar(255) DEFAULT NULL,
+  `usuario` varchar(45) DEFAULT NULL,
+  `fecha` datetime DEFAULT NULL,
+  PRIMARY KEY (`idgenerador`)
+) ENGINE=InnoDB AUTO_INCREMENT=5197 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+CREATE TABLE `USUARIO` (
+  `idusuario` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(32) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `cambiar` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `admin` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idusuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+INSERT INTO `u254837950_work_form`.`USUARIO` (`usuario`, `password`, `status`, `admin`) VALUES ('admin', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', '1', '1');
